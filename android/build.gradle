@@ -120,8 +120,7 @@ idea {
     }
 }
 dependencies {
-    compile files('src/gdx-pay-android-0.10.0-library.jar')
+
+    compile files('src/gdx-pay-android-0.10.1-library.jar')
     compile files('src/gdx-pay-android-googleplay-0.10.1.jar')
-    compile files('src/gdx-pay-android-openiab-0.10.0-library.jar')
-    compile files('src/gdx-pay-android-ouya-0.10.0-library.jar')
 }
