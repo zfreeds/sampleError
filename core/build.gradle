@@ -2,10 +2,11 @@ apply plugin: "java"
 sourceCompatibility = 1.6
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 sourceSets.main.java.srcDirs = ["src/"]
-eclipse.project {
-    name = appName + "-core"
-}
+
 dependencies {
-    compile files('src/gdx-pay-0.10.0-library.jar')
-    compile files('src/gdx-pay-client-0.10.0-library.jar')
+    //compile files('src/gdx-pay-0.10.0-library.jar')
+    //compile files('src/gdx-pay-client-0.10.0-library.jar')
+
+    compile "com.badlogicgames.gdxpay:gdx-pay:${gdxPayVersion}"
+    compile "com.badlogicgames.gdxpay:gdx-pay-client:${gdxPayVersion}"
 }

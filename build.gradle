@@ -13,7 +13,6 @@ buildscript {
 }
 
 allprojects {
-    apply plugin: "eclipse"
     apply plugin: "idea"
 
     version = '1.0'
@@ -25,7 +24,6 @@ allprojects {
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
         gdxPayVersion = '0.10.1'
-
     }
 
     repositories {
@@ -67,9 +65,6 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64"
-
-
-
     }
 }
 
@@ -89,7 +84,6 @@ project(":ios") {
 }
 
 
-
 project(":core") {
     apply plugin: "java"
 
@@ -98,8 +92,4 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
     }
-}
-
-tasks.eclipse.doLast {
-    delete ".project"
 }
