@@ -120,7 +120,10 @@ idea {
     }
 }
 dependencies {
+//    compile files('src/gdx-pay-android-0.10.1-library.jar')
+//    compile files('src/gdx-pay-android-googleplay-0.10.1.jar')
 
-    compile files('src/gdx-pay-android-0.10.1-library.jar')
-    compile files('src/gdx-pay-android-googleplay-0.10.1.jar')
+    compile "com.badlogicgames.gdxpay:gdx-pay-client:${gdxPayVersion}"
+    compile "com.badlogicgames.gdxpay:gdx-pay-android:${gdxPayVersion}"
+    compile "com.badlogicgames.gdxpay:gdx-pay-android-googleplay:${gdxPayVersion}"
 }
